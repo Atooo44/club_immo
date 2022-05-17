@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Info logement</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="style_logement.css" rel="stylesheet">
+  </head>
+  <body>
+            <!-- Barre de navigation : pages : Présentation, Tansport, Restauration, Adresses utiles, Informations logement, Autres (cartes + nous contacter)-->
+            <div id="top" class="container-fluid fond-noir"> 
+              <div class="row"> 
+                <div class="col-md-12 bg-dark">
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                      <img src="images/logo-isen.jpg" height="50px" width="auto" style="margin-right: 2em;">
+                      <a class="navbar-brand" href="accueil.html"><div class=" texte-blanc">Accueil</div></a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="presentation.html"><div class=" texte-blanc">Présentation</div></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="transport.html"><div class=" texte-blanc">Transport</div></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="restauration.html"><div class=" texte-blanc">Restauration</div></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="adresses_utiles.html"><div class=" texte-blanc">Adresses utiles</div></a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="info_logement.html"><div class=" texte-blanc">Informations logement</div></a>
+                          </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              <label class="texte-blanc">Autres</label>
+                            </a>
+                            <ul class="dropdown-menu fond-bordeau texte-blanc" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item texte-blanc" href="cartes.html">Cartes</a></li>
+                              <li><a class="dropdown-item texte-blanc" href="equipe.html">Qui sommes-nous ?</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+              </div> 
+          </div> 
+            <!-- Fin de la barre de navigation -->
+ 
+      <!-- BANDEAU LOGEMENT -->
+      <div class="row ">
+        <hr style="height: 0.5em; color: white;">
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="background-color: #8b3a3a;">
+            <h5 style="text-align: center; font-size: 2em; color: white; margin-top: 1.5em; letter-spacing: 1em;">INFO LOGEMENT</h5><br>
+            <hr style="height: 0.75em; color: white;">
+          </div>
+      </div>
+ 
+      <!-- PARAGRAPHE RESIDENCE SOCIALES CROUS -->
+      <div class="row">
+        <div class="col-md-12">
+              <h3 id="titre_partie">RESIDENCE SOCIALES CROUS</h3>
+              <hr style="border: none; border-top: 0.2em dotted black; background-color: white;"><br>
+              </div>
+              <div id="resi_bail">Il existe de nombreuses résidences universitaires à Nantes (dont 19 gérées par le CROUS).
+                Pour obtenir un logement dans une résidence, il faut <strong>constituer un dossier</strong> sur le site internet
+                du CROUS dès le 15 janvier.<br>
+                <strong>Site</strong> : <a href="http://www.crous-nantes.fr" target="_blank">http://www.crous-nantes.fr</a>        
+                <br><br>
+                L’<strong>attribution des logements</strong> se fait en fonction des ressources de la famille (un élève
+                boursier aura plus de chance d’avoir la résidence souhaitée) et du nombre de places
+                disponibles. Le site du CROUS propose également à travers son service LOKAVIZ des offres
+                de locations de particuliers réservées aux étudiants.    
+                <br>         
+              </div>
+            </div>
+ 
+      <!-- PARAGRAPHE RESIDENCE UNIVERSITAIRES -->
+ 
+      <div class="row">
+          <div class="col-md-12">
+                <h3 id="titre_partie">RESIDENCES UNIVERSITAIRES</h3>
+                <hr id="ligne_partie"><br>
+                <div id="resi_bail">Les résidences universitaires gérées par des organismes autres que le CROUS peuvent être
+                    ici intéressantes grâce à leur proximité avec l’ISEN. Pour visualiser un plan avec les
+                    emplacements, saisir <strong>« résidences étudiantes Nantes est et Carquefou »</strong> dans votre moteur
+                    de recherche.           
+                    <br><br> <br>              
+                  </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">Ocean Break 2 :</h5>
+                        </div>
+                        <p class="mb-1">Rue de Grande-Bretagne – 44300 Nantes<br>
+                            accessible par le bus 60 et un peu de marche à pied, ou en 10mn en voiture.</p>
+                      </a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                      <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">City résidence Nantes campus :</h5>
+                      </div>
+                      <p class="mb-1">Sur le campus Chantrerie, rue Alfred Kastler- 44300 Nantes<br>
+                        à 5 mn en voiture ou en C6, à partir de 455€/mois.</p>
+                        </a>
+                    <a href="https://www.fac-habitat.com/fr/" target="_blank" class="list-group-item list-group-item-action">
+                        <div class="d-flex w-100 justify-content-between">
+                        <h5 class="mb-1">Fac habitat :</h5>
+                        </div>
+                        <p class="mb-1"> www.fac-habitat.com, des résidences à proximité des campus
+                            de l’université de Nantes, à partir de 395€/ mois
+                            </p>
+                        </a>
+                        <a href="https://www.studently.fr/" target="_blank" class="list-group-item list-group-item-action">
+                            <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Les Arlézines :</h5>
+                            </div>
+                            <p class="mb-1">134, Route de Carquefou – 44470 Carquefou :
+                                (Partenariat de l’ISEN Nantes avec la résidence les Arlézines)<br><br>
+                                Résidence étudiante sécurisée avec appartements de 21m2 ou plus meublés et équipés.<br>
+                                Tarif : à partir de 450€/ mois pour un T1.<br>
+                                Accès de Nantes centre : Chronobus ligne C6 arrêt Moulin de Porterie- Lignes 75 et 95
+                                pour rejoindre le centre-ville de Carquefou.<br>
+                                <ul>
+                                    <li>Services inclus</li>
+                                    <li>Accès sécurisé</li>
+                                    <li>Accueil/réception avec accès Internet</li>
+                                    <li>Régisseur</li>
+                                    <li>Salle de fitness</li>
+                                    <li>Salle commune pour activités</li>
+                                    <li>Parking couvert et surveillé</li>
+                                    <li>Local deux roues</li>
+                                    <li>Fourniture de linge</li>
+                                    <li>Services à la carte</li>
+                                    <li>Service petit-déjeuner</li>
+                                    <li>Laverie</li>
+                                </ul><br>
+                                Contact : Mme Anne-Sarah ROLLAND, Responsable de site<br>
+                                Réception : 02 51 88 94 90 (du lundi au vendredi de 8h15 à 12h30 et de 15h à 18h15)<br>
+                                Mail : lesarlezines@privilege-es.com<br>
+                                Site Web : www.privilege-etudes.com<br>
+                                </p>
+                            </a>
+                            <a href="https://www.appartcity.com/fr/destinations/pays-de-la-loire/carquefou/nantes-carquefou.html" target="_blank" class="list-group-item list-group-item-action">
+                              <div class="d-flex w-100 justify-content-between">
+                              <h5 class="mb-1">Appart City :</h5>
+                              </div>
+                              <p class="mb-1">Situé non loin de l’ISEN Nantes, Appart City offre des logements
+                                pratiques et abordables pour de courts séjours.<br>
+                                <strong>Adresse</strong> : 7, rue de l’Hôtellerie 444702 Carquefou<br>
+                                <strong>Téléphone</strong> : 02 28 23 07 34<br>
+                                <strong>Site </strong>: https://www.appartcity.com/fr/destinations/pays-de-la-loire/carquefou/nantes-carquefou.html
+                                  </p>
+                              </a><br>
+                </div>
+          </div>
+      </div>
+ 
+      <!-- LOGEMENT CONTRE SERVICE : COHABITATION INTERGENERATIONNELLE -->
+      <div class="row">
+        <div class="col-md-12">
+              <h3 id="titre_partie">LOGEMENT CONTRE SERVICE : COHABITATION INTERGENERATIONNELLE</h3>
+              <hr style="border: none; border-top: 0.2em dotted black; background-color: white;"><br>
+              </div>
+              <div id="resi_bail">Sur le principe de la cohabitation intergénérationnelle, c’est un
+                service mis en place par des associations pour mettre en relation des
+                seniors et des étudiants qui, en <strong>échange</strong> d’un <strong>hébergement gratuit</strong>
+                (hormis les charges), participent aux <strong>tâches quotidiennes</strong>.
+                L’avantage principal est d’avoir un hébergement jusqu’à 10 fois moins
+                coûteux que les autres alternatives.   
+                <br>
+                Pour en savoir plus : <a href="http://www.letempspourtoit.fr/" target ="_blank">www.letempspourtoit.fr</a><br>
+                <a href="https://www.nantesrenoue.com/" target="_blank" style = "margin-left: 10.75em;">www.nantesrenoue.com</a><br>
+                <a class="lien" href=documents/presentation_intergenerationelle.pdf target="_blank">Téléchargez la présentation !</a></div> <!-- Guide pratique téléchargeable -->
+
+              </div>
+            </div>
+ 
+      <!-- PAGINATION -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end" style="margin-top: 2.5em;">
+          <li class="page-item">
+            <a class="page-link" href="info_logement2.html">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="info_logement.html">1</a></li>
+          <li class="page-item"><a class="page-link" href="info_logement2.html">2</a></li>
+          <li class="page-item disabled"><a class="page-link" href="info_logement3.html" aria-disabled="true" style="font-weight: bold;">3</a></li>
+          <li class="page-item"><a class="page-link" href="info_logement4.html">4</a></li>
+          <li class="page-item">
+            <a class="page-link" href="info_logement4.html">Next</a>
+          </li>
+        </ul>
+      </nav>
+    
+    <!-- Bandeau de fin de page -->
+    <div class="container-fluid"> <!-- Pour décaler le bandeau de fin -->
+      <div class="row">
+        <div class="col-md-12" style ="margin-top:10em;">
+          Easter egg !
+        </div> 
+      </div>
+    </div>
+
+    <div class="container-fluid fond-bordeau bas">
+      <div class="row"> 
+        <div class="col-md-2 offset-md-2">
+          <div class="case"><a href="equipe.html" style="text-decoration: none;color:#8b3a3a;">Qui sommes-nous ?</a></div>
+        </div>
+        <div class="col-md-2">
+          <div class="case"><a href="liens_utiles.html" style="text-decoration: none; color:#8b3a3a;">Liens utiles</a></div> 
+        </div>
+        <div class="col-md-2">
+          <div class="case"><a class="lien" href=documents/Guide_Pratique_ISEN_Immo.pdf target="_blank" style="text-decoration: none; color:#8b3a3a;">Le guide pratique!</a></div> <!-- Guide pratique téléchargeable -->
+        </div>
+        <div class="col-md-2">
+          <div class="case"><a href="presentation.html" style="text-decoration: none; color:#8b3a3a;">Vous êtes perdu ?</a></div> 
+        </div>
+        <div class="col-md-1 offset-md-1"> <!-- Retour en haut de la page -->
+          <a href="#top"><span class="material-icons" style="margin-top:0.75em;color:white;">arrow_upward</span></a>
+        </div>
+      </div>
+    </div> 
+      <!-- Fin du bandeau de fin de page -->
+    
+  </body>
+</html>

@@ -1,0 +1,77 @@
+/* style du site */
+ 
+ 
+/* styles "universels" */
+ 
+body{
+    font-family: "fantasy", Verdana; /* pas de Raleway comme pour le guide pratique : à modifier s'il y a mieux */
+    background-color: #e1e1e0;
+}
+a{
+    text-decoration: none;
+}
+ 
+ 
+ 
+/* classes personnalisées */
+ 
+.fond-bordeau{   /* permet de colorier en bordeau les éléments de la classe */
+    /*padding-top:1em;*/
+    background-color: #8b3a3a;
+}
+.fond-noir{   /* permet de colorier en bordeau les éléments de la classe */
+    /*padding-top:1em;*/
+    background-color: black;
+}
+.texte-blanc{ /* texte en blanc :3 */
+    color : #e1e1e0;
+}
+.bas{ /* pour le bandeau du bas */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.case{
+    border : 1px solid #e1e1e0;
+    margin : 0.5em 0.5em 0.5em 0.5em;
+    padding : 0.5em;
+    border-radius: 30px;
+    text-align: center;
+    background-color :#e1e1e0;
+    color:#8b3a3a;
+}
+.lien{ /* pour paramètrer directement*/
+    text-decoration: underline;
+    font-weight: bold;
+}
+#titre_partie{
+    letter-spacing: 0.2em;
+    text-align: center;
+    margin-top: 1em;
+}
+#ligne_partie{
+    border: none;
+    border-top: 0.2em dotted black;
+    background-color: white;
+}
+#liste_types_offres{
+    list-style-type:initial;
+}
+#etat_des_lieux{
+    padding-left: 2.5em;
+    text-align: justify;
+    padding-right: 2.5em;
+}
+#aide_au_log{
+    padding-left: 2.5em;
+    text-align: justify;
+    padding-right: 2.5em;
+}
+#resi_bail{
+    padding-left: 2.5em;
+    text-align: justify;
+    padding-right: 2.5em;
+}

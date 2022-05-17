@@ -1,0 +1,67 @@
+/* style du site */
+
+
+/* styles "universels" */
+
+body{
+    font-family: "fantasy", Verdana; /* pas de Raleway comme pour le guide pratique : à modifier s'il y a mieux */
+    background-color: #e1e1e0;
+}
+a{
+    text-decoration: none;
+}
+p{
+    text-align: justify;
+    text-indent: 3em;
+}
+
+
+
+/* classes personnalisées */
+
+.fond-bordeau{   /* permet de colorier en bordeau les éléments de la classe */
+    /*padding-top:1em;*/
+    background-color: #8b3a3a;
+}
+.fond-noir{   /* permet de colorier en bordeau les éléments de la classe */
+    /*padding-top:1em;*/
+    background-color: black;
+}
+.texte-blanc{ /* texte en blanc :3 */
+    color : #e1e1e0;
+}
+.texte-bordeau{ /* texte en blanc :3 */
+    color : #8b3a3a;
+}
+.bas{ /* pour le bandeau du bas */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.case{
+    border : 1px solid #e1e1e0;
+    margin : 0.5em 0.5em 0.5em 0.5em;
+    padding : 0.5em;
+    border-radius: 30px;
+    text-align: center;
+    background-color :#e1e1e0;
+    color:#8b3a3a;
+}
+.lien{ /* pour paramètrer directement*/
+    text-decoration: underline;
+    font-weight: bold;
+}
+.titre{
+    margin-top: 4em; 
+    margin-bottom: 2em;
+}
+.titre h1{
+    text-align: center;
+}
+.separateur{
+    border-top:solid 3px #8b3a3a;
+    margin: 4em 0em 0em 0em;
+}
