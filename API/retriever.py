@@ -2,6 +2,7 @@ from lib2to3.pytree import Base
 import requests
 import json
 from bs4 import BeautifulSoup
+from discord_webhook import DiscordWebhook, DiscordEmbed
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4951.67 Safari/537.36'
 }
@@ -42,5 +43,26 @@ def logic_immo():
         response['isSuccess'] = False
         response['status'] = err
         return response
+
+def send_contact(email):
+    try:
+        webhook = DiscordWebhook(
+            url="https://discord.com/api/webhooks/965962262949007430/mbn9J2ztNfyw4GXYClbNhcqclCzWZfaTP7aMO1_MfICRhFMGfDT87oyZOWP8Uu60CC2f",
+            username="Form Manager")
+
+        embed = DiscordEmbed(
+            title="Nouvelle Demande Reçu ! :white_check_mark:", color=15158332
+        )
+
+        embed.set_footer(text="Club Immo - Nantes", icon_url=(
+            "https://cdn.discordapp.com/attachments/752130443893145674/777191358665457674/logobyZoen.png"))
+        embed.set_timestamp()
+        embed.add_embed_field(name=":shopping_cart: Email", value=f"`{email}`", inline=False)
+
+        webhook.add_embed(embed)
+        response = webhook.execute()
+        return True
+    except BaseException:
+        return False
 
     
